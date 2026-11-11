@@ -1,0 +1,103 @@
+body{
+  background-color: rgb(237, 191, 135);
+}
+
+header {
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9tx8in3sbEF2D-GxlVRGeuXD7droHx7XzzFj2wHZ5EA&s=10");
+background-size: cover;
+background-position: center;
+height: 300px;
+}
+
+.text_header{
+color:orange ;
+text-align:center;
+font-size:100px;
+font-style: italic;
+font-family:Georgia, 'Times New Roman', Times, serif;
+padding-top:10px;
+}
+
+.text_main {
+color: lightyellow;
+text-align: center;
+font-size:50px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+padding-top:20px;
+font-weight: 200;
+}
+.text_main2 {
+  color: rgb(220,10,90);
+  text-align: center;
+  font-size:25px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding-top:20px;
+  font-weight: 900;
+  text-align: center;
+  }
+  .container {
+  display: flex;
+  justify-content: center;  
+ 
+}
+.container div {
+  padding:10px;
+  background-color: rgb(196, 120, 19);
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+.box-1 {
+     width:40%;
+     background-image: url("https://static.boredpanda.com/blog/wp-content/uploads/2024/10/50-halloween-memes-that-are-freakishly-hilarious-cover_675.jpg");
+     height: 400px;
+     margin: 50px;
+   
+}
+.box-2 {
+     width:40%;
+     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIW8Lbq__2ADapa-L6f-NpdlcyNWKD3dRJw2-AHWPnkA&s=10zz");
+     height: 400px;
+     margin: 50px;}
+.box-3 {
+     width:40%;
+     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDmGvRucCKx2HJjLe6jHuAqEQRjOupYJCjpTRkmGydQKG6Ntws8I1UM8&s=10");
+     height: 400px;
+     margin: 50px; }
+  
+  
+  .falling-emoji {
+    position: absolute;
+    top: -50px;
+    animation-name: fall;
+    animation-timing-function: linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+  
+#halloweenButton {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    background-color: rgb(76, 21, 4);
+    color: orange;
+    font-size: 20px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#emojiContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1000;
+}
